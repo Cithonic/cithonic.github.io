@@ -12,11 +12,10 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/background.webg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background.webg'); /* Dark overlay */
     background-size: cover;
     background-position: center;
     z-index: -1; /* Ensure it's below content */
-    opacity: 0.5; /* Darken the background */
 }
 
 body {
