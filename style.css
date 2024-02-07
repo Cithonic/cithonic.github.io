@@ -110,4 +110,12 @@ footer {
     width: calc(100% - 40px);
     margin-top: 20px;
 }
+body {
+    background-image: url('images/background.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
 
