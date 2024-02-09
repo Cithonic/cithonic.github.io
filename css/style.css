@@ -70,17 +70,6 @@ nav ul li a:active {
 
 /* Nav bar sections end */
 
-.home-icon:before {
-    content: url(path/to/home-icon.svg); /* Use your icon paths */
-}
-
-.about-icon:before {
-    content: url(path/to/about-icon.svg);
-}
-
-.contact-icon:before {
-    content: url(path/to/contact-icon.svg);
-}
 /* Start of main sections  */
 main {
     flex: 1;
