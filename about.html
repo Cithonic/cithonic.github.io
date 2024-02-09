@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pentesting Company</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.querySelector("header").style.backgroundColor = "transparent"; /* Make navbar transparent */
+          } else {
+            document.querySelector("header").style.backgroundColor = "#2C2C2E"; /* Revert to original color */
+          }
+        }
+    </script>   
+    <header>
+        <div class="logo-container">
+            <img src="./images/cithonicLogo.png" alt="Company Logo" id="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span class="icon home-icon"></span>Home</a></li>
+                <li><a href="about.html"><span class="icon about-icon"></span>About Us</a></li>
+                <li><a href="contact.html"><span class="icon contact-icon"></span>Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="team">
+            <h2>Our Experts</h2>
+            <div class="employee">
+                <!-- <img src="images/employee1.jpg" alt="Employee 1"> -->
+                <h3>Nestor Torres</h3>
+                <p>
+                    Nestor Torres - stands as a beacon of expertise and innovation in the cybersecurity landscape, co-founding our leading penetration testing company with a vision to redefine the boundaries of application security. Fluent in both the language of technology and business, Nestor brings an unparalleled depth of knowledge to his role, not just as a CEO, but as a hands-on Senior Application Security Engineer and acclaimed Author.
+                </p>
+                <p>
+                    With a bilingual background, Nestor bridges the gap between diverse teams and clients, ensuring seamless communication and understanding across all project dimensions. His approach to cybersecurity is both methodical and inventive, leveraging cognitive and critical thinking skills to dissect and fortify web and mobile applications against the ever-evolving threats they face.
+                </p>
+                <p> 
+                    Nestor's proficiency in conducting thorough static and dynamic analysis, coupled with his adeptness in web application penetration testing, sets him apart in the industry. His commitment to excellence doesn't stop at identifying vulnerabilities; he is passionately dedicated to educating developers on secure coding practices, thereby elevating the standard of security from the ground up.
+                </p>
+                <p>    
+                    Under his leadership, our company doesn't just offer solutions; we deliver comprehensive security architecture designs that are meticulously documented, ensuring clarity and consistency in our methods and outcomes. Nestor's vision is clear - to not only protect our clients in today's digital age but to empower them with the knowledge and tools to sustain that security into the future.
+                </p>
+                <p>    
+                    Join us in experiencing the pinnacle of application security services, where Nestor Torres' expertise and innovative strategies lead the way in creating a safer digital world for everyone. </p>
+                </p>
+            </div>
+            <div class="employee">
+                <!-- <img src="images/employee1.jpg" alt="Employee 1"> -->
+                <h3>Ryan Soper</h3>
+                <p>Need to add info</p>
+            </div>
+            <!-- Add more employee divs as needed -->
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>To provide top-notch penetration testing services that help our clients secure their digital assets against threats.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cithonic Company</p>
+    </footer>
+</body>
+</html>

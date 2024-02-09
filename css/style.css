@@ -1,0 +1,242 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 0; /* Updated to remove extra space */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #1C1C1E; /* Apple dark grey background */
+    color: #A2A2A2; /* Lighter grey for text */
+}
+
+header {
+    background-color: #2C2C2E; /* Initial background color */
+    color: #FFFFFF;
+    position: fixed;
+    top: 0; /* Ensure it's at the very top */
+    left: 0;
+    right: 0; /* Ensure the header spans the full width */
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as necessary */
+}
+
+/* Nav bar sections start */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Adjust padding to ensure content stays within view */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    color: #000000; /* Grey for links */
+    text-decoration: none;
+}
+
+nav ul li a {
+    background-color: #6E6E73; /* Button background */
+    color: #FFFFFF; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.1s; /* Smooth background color change and transform */
+}
+
+/* Hover state */
+nav ul li a:hover {
+    background-color: #575759; /* Darker shade on hover */
+}
+
+/* Active/clicked state */
+nav ul li a:active {
+    background-color: #3D3D3F; /* Even darker shade to simulate the button being pressed */
+    transform: translateY(2px); /* Slightly move the button down to mimic a press */
+}
+
+/* Nav bar sections end */
+
+.home-icon:before {
+    content: url(path/to/home-icon.svg); /* Use your icon paths */
+}
+
+.about-icon:before {
+    content: url(path/to/about-icon.svg);
+}
+
+.contact-icon:before {
+    content: url(path/to/contact-icon.svg);
+}
+/* Start of main sections  */
+main {
+    flex: 1;
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+}
+
+section {
+    margin: 2em 1em;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px; /* Space between sections */
+}
+
+.section-container img {
+    width: 40%; /* Adjust based on your needs */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.section-container section {
+    width: 50%; /* Adjust based on your needs */
+}
+
+/* Reverse the order for the second container */
+.section-container.reverse {
+    flex-direction: row-reverse;
+}
+
+h1, h2, h3 {
+    color: #F2F2F7; /* Very light grey for headings, ensuring readability */
+}
+
+/* Footer CSS start */
+
+footer {
+    background-color: #3A3A3C; /* Dark footer, keeping with the theme */
+    color: #FFFFFF; /* White text for contrast */
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Footer CSS end */
+
+/* Contact page and sections start */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#map {
+    flex-basis: 50%; /* Takes up the other half of the container's width */
+    height: 100%; /* Full height to match the contact-info section */
+    border: none; /* Removes any default border */
+}
+
+#contact-info {
+    padding-right: 20px;
+    background-color: #2C2C2E; /* Button-like background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    color: #FFFFFF; /* Text color for contrast */
+    padding: 20px; /* Inner space */
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 70%; /* Increased width */
+    flex: 1;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px); /* Slightly raise the employee section on hover for a button-like effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for more depth */
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        margin: 20px 5%; /* Smaller side margins for smaller screens */
+        width: 90%; /* Further increase width for smaller screens */
+    }
+}
+/* Contact page and sections end */
+
+/* images on home for CSS start*/
+
+.images-container {
+    display: inline-block;
+    background-color: #1C1C1E; /* Match the site's background color */
+    border-radius: 10px; /* Adjust based on the desired corner roundness */
+    overflow: hidden; /* Ensures the content respects the border radius */
+}
+
+.images-container img {
+    display: block; /* Remove inline-block spacing */
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.images-image {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* images on home for CSS end*/
+
+/* Here the logo CSS */
+
+.logo-container {
+    display: inline-block;
+    background-color: #1C1C1E; /* Match the site's background color */
+    border-radius: 10px; /* Adjust based on the desired corner roundness */
+    overflow: hidden; /* Ensures the content respects the border radius */
+}
+
+.logo-container img {
+    display: block; /* Remove inline-block spacing */
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo-image {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Here the logo CSS end */
+
+/* about sectin on the employee sectins start */
+
+.employee {
+    background-color: #2C2C2E; /* Button-like background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    color: #FFFFFF; /* Text color for contrast */
+    padding: 20px; /* Inner space */
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 70%; /* Increased width */
+}
+
+.employee:hover {
+    transform: translateY(-5px); /* Slightly raise the employee section on hover for a button-like effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for more depth */
+}
+
+@media (max-width: 768px) {
+    .employee {
+        margin: 20px 5%; /* Smaller side margins for smaller screens */
+        width: 90%; /* Further increase width for smaller screens */
+    }
+}
+
+/* about sectin on the employee sectins end */

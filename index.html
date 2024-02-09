@@ -3,33 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cithonic - Penetration Testing Services</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home - Pentesting Company</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.querySelector("header").style.backgroundColor = "transparent"; /* Make navbar transparent */
+          } else {
+            document.querySelector("header").style.backgroundColor = "#2C2C2E"; /* Revert to original color */
+          }
+        }
+        </script>        
     <header>
-        <img src="images/cithonic_logo.jpeg" alt="Cithonic Logo">
-        <h1>Cithonic</h1>
-        <p>Veteran Owned and Operated</p>
+        <div class="logo-container">
+            <img src="./images/cithonicLogo.png" alt="Company Logo" id="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span class="home-icon"></span>Home</a></li>
+                <li><a href="about.html"><span class="about-icon"></span>About Us</a></li>
+                <li><a href="contact.html"><span class="contact-icon"></span>Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Cithonic is a leading penetration testing company specializing in web sites and web applications. Our team of experienced professionals is dedicated to ensuring your digital assets are secure.</p>
-        </section>
-        <section>
-            <h2>Our Services</h2>
-            <p>Our comprehensive range of services includes...</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>For more information or to schedule a consultation, please contact us at...</p>
-        </section>
+        <div class="section-container">
+            <img src="./images/HackerCommandCenter.webp" alt="Photo description" class="images-container">
+            <section id="title">
+                <h2>Our Mission</h2>
+                <p>
+                    At Cithonic, we are dedicated to fortifying the cybersecurity posture of businesses in the digital age. 
+                    Our mission is to identify vulnerabilities, expose potential threats, and reinforce the security of our clients' digital assets. 
+                    We believe in proactive defense, empowering our clients with the knowledge and solutions to not only respond to threats but to anticipate and prevent them. 
+                    Through our comprehensive penetration testing services, we provide an in-depth analysis of your security landscape, delivering actionable insights and robust protection strategies. 
+                    Our team of certified professionals is committed to excellence, utilizing cutting-edge technologies and methodologies to ensure your business remains resilient in the face of evolving cyber threats. 
+                    Partner with us to navigate the complexities of cybersecurity, and together, we will secure your digital future.
+                </p>
+            </section>
+        </div>
+        <div class="section-container reverse">
+            <img src="./images/CyberSecurityFortress.webp" alt="Photo description" class="images-container">
+            <section id="services">
+                <h2>Services</h2>
+                <p>
+                    At Cithonic, we offer a wide range of penetration testing services tailored to meet the unique security needs of your business. Our services include:
+                </p>
+                <p>
+                    <b>Web Application Pentesting:</b> We assess your web applications for vulnerabilities that could be exploited by attackers, providing comprehensive testing that covers all aspects of web security, including OWASP Top 10 risks.
+                </p>
+                <p>
+                    <b>Mobile Pentesting:</b> With the proliferation of mobile devices, securing mobile applications is critical. Our team conducts thorough testing of iOS and Android apps, identifying security flaws and providing recommendations for hardening your mobile platforms.
+                </p>
+                <p>
+                    <b>Cloud Pentesting:</b> As businesses increasingly move to cloud-based solutions, securing these environments is paramount. We offer specialized pentesting services for cloud infrastructure, including AWS, Azure, and Google Cloud Platform, ensuring that your cloud deployments are robust against attacks.
+                </p>
+                <p>
+                    <b>Application Security Architecture Review:</b> Beyond penetration testing, we offer reviews of your application security architecture. Our experts evaluate the design of your applications, identifying potential security issues and advising on best practices to build a secure foundation from the ground up.
+                </p>
+                <p>
+                    Partner with Cithonic for comprehensive penetration testing services that safeguard your digital assets and ensure compliance with industry standards and regulations.
+                </p>
+            </section>
+        </div>
+        <div class="section-container">
+            <img src="./images/CyberDropTesting.webp" alt="Photo description" class="images-container">
+            <section id="testimonials">
+                <h2>Customer Testimonials</h2>
+                <p>
+                    What Our Customers Say
+                </p>
+                <p>
+                    "Partnering with Cithonic was a game-changer for our cybersecurity strategy. 
+                    Their team not only identified critical vulnerabilities in our web applications but also provided us with clear, actionable guidance on how to improve our security posture. 
+                    We've seen a significant reduction in risks and feel much more confident in our defenses. We will definitely be using their services again." - John D., CTO of Tech Innovations Inc.
+                </p>
+                <p>
+                    "The expertise and professionalism of the Cithonic team were evident from day one. 
+                    Their mobile pentesting services provided us with invaluable insights into our app's security, helping us to implement stronger protections for our users' data. 
+                    Their recommendations have been instrumental in our development process. We look forward to a long-term partnership." - Emily R., Security Manager at Mobile Solutions Ltd.
+                </p>
+                <p>
+                    "Cithonic's cloud pentesting service was thorough and effective, identifying vulnerabilities we hadn't considered and helping us to secure our cloud deployments comprehensively. 
+                    Their team is knowledgeable and approachable, making the entire process smooth and understandable. 
+                    Their impact on our cloud security strategy has been profound, and we highly recommend their services." - Alex W., Director of IT Operations at Cloud Services Provider
+                </p>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Cithonic Penetration Testing. All rights reserved.</p>
+        <p>&copy; 2024 Cithonic Company</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
-
