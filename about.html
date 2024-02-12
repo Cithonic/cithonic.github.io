@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Pentesting Company</title>
+    <title>Home - Cithonic</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.querySelector("header").style.backgroundColor = "transparent"; /* Make navbar transparent */
-          } else {
-            document.querySelector("header").style.backgroundColor = "#2C2C2E"; /* Revert to original color */
-          }
-        }
-    </script>   
+    <script src="js/main.js"></script>
     <header>
         <div class="logo-container">
-            <img src="./images/cithonicLogo.png" alt="Company Logo" id="logo">
+            <img src="./images/Cithonic_logo_Print_Transparent.svg" alt="Company Logo" id="logo" class="logo-image">
+        </div>
+        <div>
+            <p class="company-name">Cithonic</p>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html"><span class="icon home-icon"></span>Home</a></li>
-                <li><a href="about.html"><span class="icon about-icon"></span>About Us</a></li>
-                <li><a href="contact.html"><span class="icon contact-icon"></span>Contact Us</a></li>
+                <li><a href="index.html"><span></span>Home</a></li>
+                <li><a href="services.html"><span></span>Services</a></li>
+                <li><a href="about.html"><span></span>About Us</a></li>
+                <li><a href="contact.html"><span></span>Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="team">
-            <h2>Our Experts</h2>
+            <div class="employee">
+                <h2 >Our Experts</h2>
+            </div>
             <div class="employee">
                 <!-- <img src="images/employee1.jpg" alt="Employee 1"> -->
                 <h3>Nestor Torres</h3>
@@ -55,11 +54,25 @@
             <div class="employee">
                 <!-- <img src="images/employee1.jpg" alt="Employee 1"> -->
                 <h3>Ryan Soper</h3>
-                <p>Need to add info</p>
+                <p>                    
+                    Ryan Soper embodies the spirit of dedication, experience, and expertise in the cybersecurity domain as the co-founder and leading force behind our premier penetration testing firm. An accomplished security engineer and penetration tester, he bring[s] over a decade of comprehensive experience to the forefront of our operations, highlighted by an impressive veteran status that underscores his commitment and resilience.
+                </p>
+                <p>
+                    With a track record of conducting thousands of penetration tests, Ryan has demonstrated exceptional proficiency in identifying vulnerabilities across a wide array of systems and environments. His hands-on experience is further enriched by his strategic role in managing the remediation of more than 5,000 security flaws, showcasing a profound understanding of the intricacies involved in fortifying digital landscapes against sophisticated threats.
+                </p>
+                <p>    
+                    Beyond his technical prowess, Ryan is deeply invested in the cultivation of robust security programs. He is been instrumental in developing application security capabilities that transcend traditional methodologies, fostering a culture of innovation and continuous improvement within organizations. His enthusiasm for enhancing security postures is matched by his dedication to mentorship, guiding teams to excel in the dynamic field of cybersecurity.
+                </p>
+                <p>    
+                    At our company, Ryan’s leadership is a cornerstone of our success. His extensive experience not only informs our strategic direction but also inspires our team to push the boundaries of what's possible in protecting our clients. With Ryan at the helm, we are committed to delivering unparalleled security solutions, empowering businesses to navigate the digital age with confidence and resilience.
+                </p>
+                <p> 
+                    Join us on a journey towards securing your digital assets, where Ryan's visionary approach and unwavering dedication set the standard for excellence in cybersecurity.</p>
+                </p>
             </div>
             <!-- Add more employee divs as needed -->
         </section>
-        <section id="mission">
+        <section id="mission" class="employee">
             <h2>Our Mission</h2>
             <p>To provide top-notch penetration testing services that help our clients secure their digital assets against threats.</p>
         </section>

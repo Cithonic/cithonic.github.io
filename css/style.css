@@ -8,25 +8,25 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 0; /* Updated to remove extra space */
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    background-color: #1C1C1E; /* Apple dark grey background */
+    /* font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; */
+    background-color: #ffffff; /* Apple dark grey background */
     color: #A2A2A2; /* Lighter grey for text */
 }
 
 header {
     background-color: #2C2C2E; /* Initial background color */
-    color: #FFFFFF;
     position: fixed;
     top: 0; /* Ensure it's at the very top */
     left: 0;
     right: 0; /* Ensure the header spans the full width */
-    z-index: 1000;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adjust padding as necessary */
+    height: 65px;
 }
+
+
 
 /* Nav bar sections start */
 .nav-links {
@@ -50,7 +50,6 @@ header {
 
 nav ul li a {
     background-color: #6E6E73; /* Button background */
-    color: #FFFFFF; /* Button text color */
     padding: 10px 15px; /* Button padding */
     border-radius: 5px; /* Rounded corners for buttons */
     text-decoration: none; /* Remove underline from links */
@@ -67,6 +66,37 @@ nav ul li a:active {
     background-color: #3D3D3F; /* Even darker shade to simulate the button being pressed */
     transform: translateY(2px); /* Slightly move the button down to mimic a press */
 }
+
+/* Here the logo CSS */
+
+.logo-container {
+    display: inline-block;
+    /* background-color: #1C1C1E; /* Match the site's background color */
+    border-radius: 20px; /* Adjust based on the desired corner roundness */
+    overflow: hidden; /* Ensures the content respects the border radius */
+}
+
+.logo-container img {
+    display: block; /* Remove inline-block spacing */
+    width: 110px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.company-name {
+    color: #eae1df; /* Sets the text color to white */
+    font-size: 45px; /* Sets the font size to be larger */
+    font-weight:500; /* Adds bold style to the text */
+    /* You might want to adjust the font-size according to your design needs */
+    /* logo colors c53364 762971 */
+    padding: 2px 2px; /* Padding for the grey box */
+    border-radius: 5px; /* Rounded corners for the grey box */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.company-name:hover {
+    background-color: #3D3D3F; /* Darker shade on hover */
+}
+/* Here the logo CSS end */
 
 /* Nav bar sections end */
 
@@ -100,7 +130,46 @@ section {
 /* Reverse the order for the second container */
 .section-container.reverse {
     flex-direction: row-reverse;
+    background-color: #3D3D3F; /* Match the site's background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
+
+.section-container:first-of-type {
+    margin-top: 80px; /* Adjusted to push the first section below the nav bar */
+}
+
+.section-container > section h2 {
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 34px; /* Sets the font size to be larger */
+    /* You might want to adjust the font-size according to your design needs */
+}
+
+
+/* images on home for CSS start*/
+
+.images-container {
+    display: inline-block;
+    background-color: #1C1C1E; /* Match the site's background color */
+    border-radius: 10px; /* Adjust based on the desired corner roundness */
+    overflow: hidden; /* Ensures the content respects the border radius */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.images-container img {
+    display: block; /* Remove inline-block spacing */
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.images-image {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* images on home for CSS end*/
 
 h1, h2, h3 {
     color: #F2F2F7; /* Very light grey for headings, ensuring readability */
@@ -157,52 +226,6 @@ footer {
 }
 /* Contact page and sections end */
 
-/* images on home for CSS start*/
-
-.images-container {
-    display: inline-block;
-    background-color: #1C1C1E; /* Match the site's background color */
-    border-radius: 10px; /* Adjust based on the desired corner roundness */
-    overflow: hidden; /* Ensures the content respects the border radius */
-}
-
-.images-container img {
-    display: block; /* Remove inline-block spacing */
-    width: 100px; /* Adjust based on your logo's size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.images-image {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    width: 100px; /* Adjust based on your logo's size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* images on home for CSS end*/
-
-/* Here the logo CSS */
-
-.logo-container {
-    display: inline-block;
-    background-color: #1C1C1E; /* Match the site's background color */
-    border-radius: 10px; /* Adjust based on the desired corner roundness */
-    overflow: hidden; /* Ensures the content respects the border radius */
-}
-
-.logo-container img {
-    display: block; /* Remove inline-block spacing */
-    width: 100px; /* Adjust based on your logo's size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.logo-image {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    width: 100px; /* Adjust based on your logo's size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Here the logo CSS end */
-
 /* about sectin on the employee sectins start */
 
 .employee {
@@ -217,7 +240,6 @@ footer {
 }
 
 .employee:hover {
-    transform: translateY(-5px); /* Slightly raise the employee section on hover for a button-like effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for more depth */
 }
 
@@ -229,3 +251,42 @@ footer {
 }
 
 /* about sectin on the employee sectins end */
+
+/* our mission section start */
+
+.ourMission {
+    background-color: #2C2C2E; /* Button-like background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    color: #FFFFFF; /* Text color for contrast */
+    padding: 20px; /* Inner space */
+    text-align: center; /* Aligns the text to the center */
+}
+
+.ourMission ul {
+    list-style: circle;
+    color: #ffffff; /* Sets the color of the bullet to white */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* our mission section end */
+
+.employee >  h2 {
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 34px; /* Sets the font size to be larger */
+    /* You might want to adjust the font-size according to your design needs */
+}
+
+
+/* Services section start */
+
+.services {
+    background-color: #2C2C2E; /* Button-like background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    color: #FFFFFF; /* Text color for contrast */
+    padding: 20px; /* Inner space */
+}
+
+
+/* services sectin ends */

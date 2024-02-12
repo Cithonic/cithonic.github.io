@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Pentesting Company</title>
+    <title>Home - Cithonic</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.querySelector("header").style.backgroundColor = "transparent"; /* Make navbar transparent */
-          } else {
-            document.querySelector("header").style.backgroundColor = "#2C2C2E"; /* Revert to original color */
-          }
-        }
-        </script>        
+    <script src="js/main.js"></script>
     <header>
         <div class="logo-container">
-            <img src="./images/cithonicLogo.png" alt="Company Logo" id="logo">
+            <img src="./images/Cithonic_logo_Print_Transparent.svg" alt="Company Logo" id="logo" class="logo-image">
+        </div>
+        <div>
+            <p class="company-name">Cithonic</p>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html"><span></span>Home</a></li>
+                <li><a href="services.html"><span></span>Services</a></li>
                 <li><a href="about.html"><span></span>About Us</a></li>
                 <li><a href="contact.html"><span></span>Contact Us</a></li>
             </ul>
@@ -32,8 +29,8 @@
     </header>
     <main>
         <div class="section-container">
-            <img src="./images/HackerCommandCenter.webp" alt="Photo description" class="images-container">
-            <section id="title">
+            <img src="./images/cyberSecurityCommandCenter.webp" alt="Lock Image our misison" class="images-container">
+            <section id="Our Mission" class="ourMission">
                 <h2>Our Mission</h2>
                 <p>
                     At Cithonic, we are dedicated to fortifying the cybersecurity posture of businesses in the digital age. 
@@ -47,23 +44,17 @@
         </div>
         <div class="section-container reverse">
             <img src="./images/CyberSecurityFortress.webp" alt="Photo description" class="images-container">
-            <section id="services">
+            <section id="services" class="ourMission">
                 <h2>Services</h2>
                 <p>
                     At Cithonic, we offer a wide range of penetration testing services tailored to meet the unique security needs of your business. Our services include:
                 </p>
-                <p>
-                    <b>Web Application Pentesting:</b> We assess your web applications for vulnerabilities that could be exploited by attackers, providing comprehensive testing that covers all aspects of web security, including OWASP Top 10 risks.
-                </p>
-                <p>
-                    <b>Mobile Pentesting:</b> With the proliferation of mobile devices, securing mobile applications is critical. Our team conducts thorough testing of iOS and Android apps, identifying security flaws and providing recommendations for hardening your mobile platforms.
-                </p>
-                <p>
-                    <b>Cloud Pentesting:</b> As businesses increasingly move to cloud-based solutions, securing these environments is paramount. We offer specialized pentesting services for cloud infrastructure, including AWS, Azure, and Google Cloud Platform, ensuring that your cloud deployments are robust against attacks.
-                </p>
-                <p>
-                    <b>Application Security Architecture Review:</b> Beyond penetration testing, we offer reviews of your application security architecture. Our experts evaluate the design of your applications, identifying potential security issues and advising on best practices to build a secure foundation from the ground up.
-                </p>
+                <ul>
+                    <li>Web Application Pentesting</li>
+                    <li>Mobile Pentesting</li>
+                    <li>Cloud Pentesting</li>
+                    <li>Application Security Architecture Review</li>
+                </ul>
                 <p>
                     Partner with Cithonic for comprehensive penetration testing services that safeguard your digital assets and ensure compliance with industry standards and regulations.
                 </p>
@@ -71,7 +62,7 @@
         </div>
         <div class="section-container">
             <img src="./images/CyberDropTesting.webp" alt="Photo description" class="images-container">
-            <section id="testimonials">
+            <section id="testimonials" class="ourMission">
                 <h2>Customer Testimonials</h2>
                 <p>
                     What Our Customers Say
